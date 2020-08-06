@@ -44,6 +44,9 @@ figure {
   margin: 0;
 }
 
+p {
+  margin-bottom: 15px;
+}
 
 ul {
   list-style: none;
@@ -192,6 +195,7 @@ img {
     font-family: $--font-bold;
     transition: 0.2s;
     font-size: 14px;
+    padding: 12px 10px;
     text-transform: capitalize;
 
     &+.nav-link {

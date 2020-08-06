@@ -358,6 +358,11 @@
   border-radius: 5px;
   padding: 20px;
 }
+.custom-form + .custom-form {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #F2EDED;
+}
 .custom-form label {
   font-family: "Dosis-SemiBold";
   font-size: 14px;
@@ -558,6 +563,10 @@ figure {
   margin: 0;
 }
 
+p {
+  margin-bottom: 15px;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -643,6 +652,7 @@ img {
   font-family: "Dosis-Bold";
   transition: 0.2s;
   font-size: 14px;
+  padding: 12px 10px;
   text-transform: capitalize;
 }
 .nav-pills .nav-link + .nav-link {
