@@ -1,0 +1,72 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+
+.form-control {
+  background-color: $--color-secondary;
+  border: 1px solid $--color-secondary;
+  transition: 0.2s;
+
+  &:focus {
+    border: 1px solid darken($--color-secondary, 10%);
+    // border: 1px solid darken($--btn-primary, 10%);
+    box-shadow: none;
+    background-color: $--color-secondary;
+  }
+}
+
+.custom-form {
+  @include roundedCorners(5);
+  padding: 20px;
+
+  label {
+    font-family: $--font-semi-bold;
+    font-size: 14px;
+  }
+
+  .forgot-pwd {
+    font-family: $--font-semi-bold;
+    color: $--color-highlight;
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+}
+
+.form-login {
+  background-color: $--color-white;
+  width: 30%;
+  margin: 0 auto;
+  box-shadow: 2px 2px 4px rgba($--color-black, 0.25);
+
+  .btn-login {
+    width: 100%;
+  }
+
+  .form-group-element {
+    @include flexbox();
+    @include justify-content(space-between);
+  }
+
+  .form-head {
+    margin: 0 auto 20px;
+    width: 60%;
+  }
+}
+
+.at-form-login {
+  @include flexbox();
+  @include justify-content(center);
+  @include align-items(center);
+  min-height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .form-login {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .form-login {
+    width: 100%;
+  }
+}

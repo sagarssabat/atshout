@@ -1,0 +1,45 @@
+.main-sidebar {
+  background-color: $--color-primary;
+  width: 230px;
+  height: calc(100vh - 70px);
+  position: fixed;
+  padding-top: 20px;
+
+  .feather {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+
+  .sidebar {
+    &__links {
+      height: 100%;
+      overflow-y: auto;
+    }
+
+    &__linkitem {
+
+      a {
+        @include flexbox();
+        @include align-items(center);
+        font-family: $--font-bold;
+        padding: 10px 15px;
+        transition: 0.2s;
+        max-height: 44px;
+        color: $--color-white;
+        text-transform: capitalize;
+        border-left: 3px solid transparent;
+
+        &:hover,
+        &.active {
+          background-color: darken($--color-primary, 10%);
+          border-color: $--color-white;
+        }
+      }
+
+      &+.sidebar__linkitem {
+        border-top: 1px solid darken($--color-primary, 20%);
+      }
+    }
+  }
+}

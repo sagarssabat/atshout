@@ -1,0 +1,86 @@
+@import "../_mixins.scss";
+@import "../_variables.scss";
+@import "_search.scss";
+@import "_login.scss";
+
+.sitenav {
+  background-color: $--color-primary;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  &~.site-content {
+    padding-top: 70px;
+  }
+
+  &__menu {
+    padding: 10px 0;
+  }
+
+  &__logo {
+    height: 100%;
+    width: auto;
+    margin-right: auto;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  &__wrap {
+    @include flexbox();
+    @include align-items(center);
+    height: 50px;
+  }
+
+  &__hamburger {
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.2s;
+    margin-right: 10px;
+    cursor: pointer;
+
+    .feather {
+      margin-right: 0px;
+    }
+
+    &:hover {
+      background-color: darken($--color-primary, 10%);
+    }
+  }
+
+  &__nav {
+    margin-left: 20px;
+    color: $--color-white;
+    font-family: $--font-bold;
+    height: 100%;
+    text-transform: capitalize;
+  }
+
+  &__links {
+    height: 100%;
+  }
+
+  &__linklist {
+    @include flexbox();
+    @include align-items(center);
+    height: 100%;
+
+  }
+
+  &__linkitem {
+    padding: 0 20px;
+    height: 100%;
+
+    a {
+      @include flexbox();
+      @include align-items(center);
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import "../_mixins.scss";
+@import "../_variables.scss";
+
+.sitenav {
+  &__login {
+    margin-left: 20px;
+
+    .user-avtar {}
+  }
+}
