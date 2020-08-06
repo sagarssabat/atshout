@@ -631,6 +631,7 @@ img {
 .btn-primary {
   background-color: #5AA2F0;
   border: 1px solid #5AA2F0;
+  color: #ffffff;
 }
 .btn-primary:hover {
   background-color: #2b88ec;
@@ -645,6 +646,17 @@ img {
 .btn-secondary:hover {
   background-color: #2b88ec;
   border: 1px solid #2b88ec;
+}
+
+.btn-highlight {
+  background-color: #E9922C;
+  border: 1px solid #E9922C;
+  color: #ffffff;
+}
+.btn-highlight:hover {
+  background-color: #cd7815;
+  border: 1px solid #cd7815;
+  color: #ffffff;
 }
 
 .feather {

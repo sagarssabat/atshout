@@ -102,6 +102,7 @@ img {
 .btn-primary {
   background-color: $--btn-primary;
   border: 1px solid $--btn-primary;
+  color: $--color-white;
 
   &:hover {
     background-color: darken($--btn-primary, 10%);
@@ -117,6 +118,18 @@ img {
   &:hover {
     background-color: darken($--btn-primary, 10%);
     border: 1px solid darken($--btn-primary, 10%);
+  }
+}
+
+.btn-highlight {
+  background-color: $--btn-secondary;
+  border: 1px solid $--btn-secondary;
+  color: $--color-white;
+
+  &:hover {
+    background-color: darken($--btn-secondary, 10%);
+    border: 1px solid darken($--btn-secondary, 10%);
+    color: $--color-white;
   }
 }
 
