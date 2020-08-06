@@ -95,6 +95,8 @@
               aria-controls="v-pills-profile" aria-selected="false"><i data-feather="users"></i>team</a>
             <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-scanner" role="tab"
               aria-controls="v-pills-messages" aria-selected="false"><i data-feather="server"></i>scanner</a>
+            <a class="nav-link" id="v-pills-api-tab" data-toggle="pill" href="#v-pills-api" role="tab"
+              aria-controls="v-pills-api" aria-selected="false"><i data-feather="key"></i>api</a>
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-license" role="tab"
               aria-controls="v-pills-settings" aria-selected="false"><i data-feather="file"></i>license</a>
           </div>
@@ -178,7 +180,7 @@
                         <td>active</td>
                         <td>enabled</td>
                         <td>
-                          <div class="btn-icons">
+                          <div class="btn-group btn-icons">
                             <button class="btn btn-pause btn-icon"><i data-feather="pause-circle"></i></button>
                             <button class="btn btn-delete btn-icon"><i data-feather="trash-2"></i></button>
                           </div>
@@ -191,7 +193,7 @@
                         <td>active</td>
                         <td>enabled</td>
                         <td>
-                          <div class="btn-icons">
+                          <div class="btn-group btn-icons">
                             <button class="btn btn-play btn-icon"><i data-feather="play-circle"></i></button>
                             <button class="btn btn-delete btn-icon"><i data-feather="trash-2"></i></button>
                           </div>
@@ -205,7 +207,8 @@
             <div class="tab-pane fade" id="v-pills-scanner" role="tabpanel" aria-labelledby="v-pills-messages-tab">
               <div class="tab-content-head">
                 <h3 class="title">scanners</h3>
-                <button type="button" class="btn btn-add"><i data-feather="plus-circle"></i></button>
+                <button type="button" class="btn btn-add" data-toggle="modal" data-target="#addNewScanner"><i
+                    data-feather="plus-circle"></i></button>
               </div>
               <div class="tab-content-body">
                 <div class="table-responsive">
@@ -225,8 +228,9 @@
                         <td>10.133.77.253</td>
                         <td>active</td>
                         <td>F6ED 3133 7FCB 1109 A9D0</td>
-                        <td>
-                          <div class="btn-icons">
+                        <td class="col-actions">
+                          <div class="btn-group btn-icons">
+                            <button class="btn btn-refresh btn-icon"><i data-feather="refresh-ccw"></i></button>
                             <button class="btn btn-pause btn-icon"><i data-feather="pause-circle"></i></button>
                             <button class="btn btn-delete btn-icon"><i data-feather="trash-2"></i></button>
                           </div>
@@ -237,8 +241,9 @@
                         <td>10.133.77.253</td>
                         <td>active</td>
                         <td>F6ED 3133 7FCB 1109 A9D0</td>
-                        <td>
-                          <div class="btn-icons">
+                        <td class="col-actions">
+                          <div class="btn-group btn-icons">
+                            <button class="btn btn-refresh btn-icon"><i data-feather="refresh-ccw"></i></button>
                             <button class="btn btn-pause btn-icon"><i data-feather="pause-circle"></i></button>
                             <button class="btn btn-delete btn-icon"><i data-feather="trash-2"></i></button>
                           </div>
@@ -249,9 +254,10 @@
                         <td>10.133.77.253</td>
                         <td>active</td>
                         <td>F6ED 3133 7FCB 1109 A9D0</td>
-                        <td>
-                          <div class="btn-icons">
-                            <button class="btn btn-pause btn-icon"><i data-feather="pause-circle"></i></button>
+                        <td class="col-actions">
+                          <div class="btn-group btn-icons">
+                            <button class="btn btn-refresh btn-icon"><i data-feather="refresh-ccw"></i></button>
+                            <button class="btn btn-play btn-icon"><i data-feather="play-circle"></i></button>
                             <button class="btn btn-delete btn-icon"><i data-feather="trash-2"></i></button>
                           </div>
                         </td>
@@ -260,6 +266,8 @@
                   </table>
                 </div>
               </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-api" role="tabpanel" aria-labelledby="v-pills-settings-tab"> api
             </div>
             <div class="tab-pane fade" id="v-pills-license" role="tabpanel" aria-labelledby="v-pills-settings-tab">
               license </div>
@@ -277,11 +285,11 @@
   </footer> -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <!-- Modal -->
-  <div class="modal fade" id="addNewMember" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="addNewMember" tabindex="-1" aria-labelledby="addNewMemberLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel"><i data-feather="user"></i>add a new team member</h5>
+          <h5 class="modal-title" id="addNewMemberLabel"><i data-feather="user"></i>add a new team member</h5>
           <button type="button" class="close btn-icon" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -312,6 +320,50 @@
               <div class="custom-control custom-switch">
                 <input type="checkbox" class="custom-control-input" id="customSwitch1">
                 <label class="custom-control-label" for="customSwitch1">Enabled</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="addNewScanner" tabindex="-1" aria-labelledby="addNewScannerLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addNewScannerLabel"><i data-feather="server"></i>add a new team scanner</h5>
+          <button type="button" class="close btn-icon" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="custom-form">
+            <div class="form-body">
+              <div class="form-group">
+                <label for="newwarehouse">Name</label>
+                <input type="text" class="form-control" id="newwarehouse">
+              </div>
+              <div class="form-group">
+                <small id="fingerprintkey" class="form-text text-muted"> ---------- SAVE THE BELOW KEY IN YOUR SCANNER
+                  ---------- </small>
+                <label for="fingerprint">fingerprint</label>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control form-control--highlight" id="fingerprint" aria-label="copykey"
+                    aria-describedby="fingerprintkey">
+                  <div class="input-group-append">
+                    <span class="input-group-text" id="copykey"><i data-feather="copy"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="publickey">public key</label>
+                <textarea class="form-control form-control--highlight" id="publickey" rows="6">
+                   -----BEGIN PGP PUBLIC KEY BLOCK----- xsFNBF8hWvQBEACjkIB7aVhzNqHQ/XzgSsrhUsNbPVrwkF0dtUiEXQyeuf7fuw59 YNMb1oaTkWxrvogFbEW9WBKsF+ely0JBmK0aU0IaIec/9VB737llQDDy0YJ0PE7X Jr2QMv+Ph3B2vTgjc/eARukqe9nCcGK+AMuYT9GH1bPlpUZtMFLs30P6aDFv2uUN zsgVwsjA8Qtmm93eUVtqdum6b4qHXwHMRyroewn8GHD1Ha3L0pRpw8kjpGYuC7FY LZutvPBeL/+NaoKHrwaV0hkQZEzSTIig8OTXDGF1J2ECvpPMx8VU3Q/q2FhrLUy2 rVowuMHUk1fMENZ+2qsveJDfnquuDnPtTBskVGgfvazeabetUNvSjPFB0fQR/V1a vpi/vp/GzABC/5S/gaKNmY++AQfMIsRZw0TtuwGqDqKC0z2Hrggktsb25+Qjcr7h rxe3CYQagoSlB5ECmH9CQEB94ihjiQ2jG8PNYm8wc/okyzl1cKGv2DvucQ+hPtH9 O0ntAfb8IBCQLhZD0l/dNgqIpwOmyKCR2s7CDSYaZIoFTn/YDTc8+uXlcec/qXsE
+                </textarea>
               </div>
             </div>
           </form>

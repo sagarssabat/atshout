@@ -2,15 +2,25 @@
 @import "_variables.scss";
 
 .form-control {
-  background-color: $--color-secondary;
-  border: 1px solid $--color-secondary;
+  background-color: $--color-light-secondary;
+  border: 1px solid $--color-light-secondary;
   transition: 0.2s;
 
   &:focus {
-    border: 1px solid darken($--color-secondary, 10%);
+    border: 1px solid darken($--color-light-secondary, 10%);
     // border: 1px solid darken($--btn-primary, 10%);
     box-shadow: none;
-    background-color: $--color-secondary;
+    background-color: $--color-light-secondary;
+  }
+
+  &--highlight {
+    color: $--color-highlight;
+    font-family: $--font-semi-bold;
+    font-size: 14px;
+
+    &:focus {
+      color: $--color-highlight;
+    }
   }
 }
 
@@ -38,6 +48,16 @@
     font-family: $--font-semi-bold;
     color: $--color-white;
     border: none;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  #fingerprintkey {
+    font-family: $--font-bold;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 
@@ -67,6 +87,19 @@
   @include justify-content(center);
   @include align-items(center);
   min-height: 100%;
+
+  .form-control {
+    background-color: $--color-secondary;
+    border: 1px solid $--color-secondary;
+    transition: 0.2s;
+
+    &:focus {
+      border: 1px solid darken($--color-secondary, 10%);
+      // border: 1px solid darken($--btn-primary, 10%);
+      box-shadow: none;
+      background-color: $--color-secondary;
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {

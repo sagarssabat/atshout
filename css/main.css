@@ -334,14 +334,22 @@
 /* Button Variables */
 /* Font Variables */
 .form-control {
-  background-color: #d4e2f3;
-  border: 1px solid #d4e2f3;
+  background-color: #f2f6fa;
+  border: 1px solid #f2f6fa;
   transition: 0.2s;
 }
 .form-control:focus {
-  border: 1px solid #acc7e8;
+  border: 1px solid #cdddec;
   box-shadow: none;
-  background-color: #d4e2f3;
+  background-color: #f2f6fa;
+}
+.form-control--highlight {
+  color: #E9922C;
+  font-family: "Dosis-SemiBold";
+  font-size: 14px;
+}
+.form-control--highlight:focus {
+  color: #E9922C;
 }
 
 .custom-form {
@@ -370,6 +378,14 @@
   font-family: "Dosis-SemiBold";
   color: #ffffff;
   border: none;
+}
+.custom-form textarea {
+  resize: none;
+}
+.custom-form #fingerprintkey {
+  font-family: "Dosis-Bold";
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .form-login {
@@ -412,6 +428,16 @@
   -ms-align-items: center;
   align-items: center;
   min-height: 100%;
+}
+.at-form-login .form-control {
+  background-color: #d4e2f3;
+  border: 1px solid #d4e2f3;
+  transition: 0.2s;
+}
+.at-form-login .form-control:focus {
+  border: 1px solid #acc7e8;
+  box-shadow: none;
+  background-color: #d4e2f3;
 }
 
 @media only screen and (max-width: 768px) {
@@ -649,6 +675,9 @@ img {
   width: 18px;
   height: 18px;
 }
+.table .col-actions {
+  text-align: right;
+}
 
 .btn-add {
   color: #5aa2f0;
@@ -664,6 +693,22 @@ img {
 
 .btn-play {
   color: #05C953;
+}
+
+.btn-refresh {
+  color: #5aa2f0;
+}
+
+.btn-group.btn-icons .btn-icon {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */

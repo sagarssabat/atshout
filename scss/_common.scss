@@ -231,6 +231,10 @@ img {
     width: 18px;
     height: 18px;
   }
+
+  .col-actions {
+    text-align: right;
+  }
 }
 
 .btn-add {
@@ -247,4 +251,18 @@ img {
 
 .btn-play {
   color: $--color-success;
+}
+
+.btn-refresh {
+  color: $--color-primary;
+}
+
+.btn-group {
+  &.btn-icons {
+    .btn-icon {
+      @include flexbox();
+      @include align-items(center);
+      padding: 5px;
+    }
+  }
 }
