@@ -106,6 +106,17 @@ img {
   }
 }
 
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid $--btn-primary;
+  color: $--color-primary;
+
+  &:hover {
+    background-color: darken($--btn-primary, 10%);
+    border: 1px solid darken($--btn-primary, 10%);
+  }
+}
+
 .feather {
   margin-right: 10px;
 }
