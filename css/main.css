@@ -19,35 +19,32 @@
 }
 .sitenav {
   background-color: #5AA2F0;
-  position: fixed;
-  width: 100%;
+  width: calc(100% - 230px);
   z-index: 10;
-}
-.sitenav ~ .site-content {
-  padding-top: 70px;
+  position: fixed;
+  right: 0px;
+  /* Use this code when logo is used in header */
+  /*Use below code when logo is used in header*/
 }
 .sitenav__menu {
   padding: 10px 0;
-}
-.sitenav__logo {
-  height: 100%;
-  width: auto;
-  margin-right: auto;
-}
-.sitenav__logo img {
-  height: 100%;
-  width: auto;
 }
 .sitenav__wrap {
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
   height: 50px;
+  margin-left: -15px;
 }
 .sitenav__hamburger {
   display: -moz-box;
@@ -111,6 +108,76 @@
   -ms-align-items: center;
   align-items: center;
   height: 100%;
+}
+
+/* Color Variables */
+/* Button Variables */
+/* Font Variables */
+.main-profile .custom-form {
+  padding: 0px;
+}
+.main-profile .content-body--aside:after {
+  content: "";
+  border-right: 1px solid #F2EDED;
+  position: absolute;
+  right: 0;
+  height: calc(100vh - 136px);
+  top: -20px;
+}
+.main-profile .content-body--main {
+  height: calc(100vh - 180px);
+  position: relative;
+  overflow-y: auto;
+}
+
+.main-section {
+  width: calc(100% - 230px);
+  padding-top: 70px;
+  margin-left: auto;
+}
+.main-section .content-head {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  padding: 20px 15px;
+  border-bottom: 1px solid #F2EDED;
+}
+.main-section .content-title {
+  font-family: "Dosis-Bold";
+  font-size: 20px;
+  line-height: 1.1;
+}
+.main-section .content-title .feather {
+  width: 20px;
+  height: 20px;
+}
+.main-section .content-body {
+  padding: 20px 15px;
+}
+.main-section .content-body--aside {
+  position: absolute;
+  width: 180px;
+}
+.main-section .content-body--main {
+  width: calc(100% - 180px);
+  padding: 0 15px;
+  margin-left: auto;
+}
+.main-section .form-title {
+  font-family: "Dosis-Bold";
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
 }
 
 @font-face {
@@ -219,6 +286,7 @@
 .custom-form label {
   font-family: "Dosis-SemiBold";
   font-size: 14px;
+  text-transform: capitalize;
 }
 .custom-form .forgot-pwd {
   font-family: "Dosis-SemiBold";
@@ -282,9 +350,13 @@
 .main-sidebar {
   background-color: #5AA2F0;
   width: 230px;
-  height: calc(100vh - 70px);
+  height: 100vh;
   position: fixed;
-  padding-top: 20px;
+}
+.main-sidebar .sitenav__logo {
+  width: 30%;
+  padding: 10px 0 6px;
+  margin: 0 auto;
 }
 .main-sidebar .feather {
   width: 20px;
@@ -292,8 +364,30 @@
   margin-left: 10px;
 }
 .main-sidebar .sidebar__links {
-  height: 100%;
+  height: 45%;
   overflow-y: auto;
+}
+.main-sidebar .sidebar__links:nth-of-type(1) {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.main-sidebar .sidebar__links:nth-of-type(1) .sidebar__linklist {
+  width: 100%;
+}
+.main-sidebar .sidebar__links:nth-last-child(1) {
+  background-color: #D4E2F3;
+}
+.main-sidebar .sidebar__links:nth-last-child(1) .sidebar__linkitem a {
+  color: #000000;
+}
+.main-sidebar .sidebar__links:nth-last-child(1) .sidebar__linkitem a:hover {
+  background-color: #acc7e8;
 }
 .main-sidebar .sidebar__linkitem a {
   display: -moz-box;
@@ -326,7 +420,7 @@
 html,
 body {
   position: relative;
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
@@ -377,9 +471,10 @@ a:hover {
 }
 
 button {
+  font-family: "Dosis-Medium";
+  min-width: 125px;
   cursor: pointer;
   text-transform: capitalize;
-  font-family: "Dosis-Medium";
 }
 button:focus {
   outline: none;
@@ -408,6 +503,33 @@ img {
   border-radius: 50%;
   background-color: #D4E2F3;
   cursor: pointer;
+}
+
+/* use below code when tabs has to be used in content head */
+.nav-pills .nav-link {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  font-family: "Dosis-Bold";
+  transition: 0.2s;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.nav-pills .nav-link + .nav-link {
+  border-top: 1px solid #F2EDED;
+}
+.nav-pills .nav-link.active {
+  background-color: transparent;
+  color: #000000;
+}
+.nav-pills .nav-link .feather {
+  width: 16px;
+  height: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */

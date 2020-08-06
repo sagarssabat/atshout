@@ -1,0 +1,27 @@
+@import "../_mixins.scss";
+@import "../_variables.scss";
+
+.main-profile {
+  .custom-form {
+    padding: 0px;
+  }
+
+  .content-body {
+    &--aside {
+      &:after {
+        content: '';
+        border-right: 1px solid $--color-grey;
+        position: absolute;
+        right: 0;
+        height: calc(100vh - 136px);
+        top: -20px;
+      }
+    }
+
+    &--main {
+      height: calc(100vh - 180px);
+      position: relative;
+      overflow-y: auto;
+    }
+  }
+}

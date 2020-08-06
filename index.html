@@ -17,31 +17,31 @@
     <div class="sitenav__menu">
       <div class="container-fluid">
         <div class="sitenav__wrap">
-          <div class="sitenav__hamburger">
+          <!-- <div class="sitenav__hamburger">
             <i data-feather="menu"></i>
-          </div>
-          <div class="sitenav__logo">
+          </div> -->
+          <!-- <div class="sitenav__logo">
             <a href="" target="_blank">
               <img src="/assets/images/logo-white.png" alt="atout main logo in white">
             </a>
-          </div>
+          </div> -->
           <div class="sitenav__search">
             <div class="form-group">
               <input type="search" id="siteSearch" class="form-control">
             </div>
           </div>
-          <div class="sitenav__nav">
+          <!-- <div class="sitenav__nav">
             <nav class="sitenav__links">
               <ul class="sitenav__linklist">
                 <li class="sitenav__linkitem">
                   <a href=""><i data-feather="help-circle"></i>support</a>
                 </li>
                 <li class="sitenav__linkitem">
-                  <a href=""><i data-feather="settings"></i>settings</a>
+                  <a href=""><i data-feather="sliders"></i>settings</a>
                 </li>
               </ul>
             </nav>
-          </div>
+          </div> -->
           <div class="sitenav__login">
             <div class="user-avtar">
               <img src="" alt="">
@@ -53,6 +53,11 @@
   </header>
   <section class="site-content">
     <aside class="main-sidebar">
+      <div class="sitenav__logo">
+        <a href="" target="_blank">
+          <img src="/assets/images/logo-white.png" alt="atout main logo in white">
+        </a>
+      </div>
       <nav class="sidebar__links">
         <ul class="sidebar__linklist">
           <li class="sidebar__linkitem">
@@ -66,16 +71,96 @@
           </li>
         </ul>
       </nav>
+      <nav class="sidebar__links">
+        <ul class="sidebar__linklist">
+          <li class="sidebar__linkitem">
+            <a href=""><i data-feather="sliders"></i>settings</a>
+          </li>
+          <li class="sidebar__linkitem">
+            <a href=""><i data-feather="log-out"></i>logout</a>
+          </li>
+        </ul>
+      </nav>
     </aside>
-    <div class="main-section"></div>
+    <div class="main-section main-profile">
+      <div class="content-head">
+        <h1 class="content-title"><i data-feather="sliders"></i>Settings</h1>
+      </div>
+      <div class="content-body">
+        <div class="content-body--aside">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+              aria-controls="v-pills-home" aria-selected="true"><i data-feather="user"></i>profile</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-team" role="tab"
+              aria-controls="v-pills-profile" aria-selected="false"><i data-feather="users"></i>team</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-scanner" role="tab"
+              aria-controls="v-pills-messages" aria-selected="false"><i data-feather="server"></i>scanner</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-license" role="tab"
+              aria-controls="v-pills-settings" aria-selected="false"><i data-feather="file"></i>license</a>
+          </div>
+        </div>
+        <div class="content-body--main">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel"
+                  aria-labelledby="v-pills-home-tab">
+                  <form class="form-profile custom-form">
+                    <div class="form-head">
+                      <h3 class="form-title">Profile</h3>
+                    </div>
+                    <div class="form-body">
+                      <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username">
+                      </div>
+                      <div class="form-group">
+                        <label for="useremail">Password</label>
+                        <input type="email" class="form-control" id="useremail">
+                      </div>
+                    </div>
+                  </form>
+                  <form class="form-change-pwd custom-form">
+                    <div class="form-head">
+                      <h3 class="form-title">change password</h3>
+                    </div>
+                    <div class="form-body">
+                      <div class="form-group">
+                        <label for="oldpassword">old password</label>
+                        <input type="text" class="form-control" id="oldpassword">
+                      </div>
+                      <div class="form-group">
+                        <label for="newpassword">new Password</label>
+                        <input type="password" class="form-control" id="newpassword">
+                      </div>
+                      <div class="form-group">
+                        <label for="verifypassword">new Password</label>
+                        <input type="text" class="form-control" id="verifypassword">
+                      </div>
+                    </div>
+                  </form>
+                  <button type="submit" class="btn btn-primary btn-save">save</button>
+                </div>
+                <div class="tab-pane fade" id="v-pills-team" role="tabpanel" aria-labelledby="v-pills-profile-tab">team
+                </div>
+                <div class="tab-pane fade" id="v-pills-scanner" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                  scanner </div>
+                <div class="tab-pane fade" id="v-pills-license" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                  license </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <footer class="site-footer">
+  <!-- <footer class="site-footer">
     <ul class="sitemap-list">
       <li class="sitemap-item"><a href="http://" target="_blank" rel="noopener noreferrer">privacy policy</a></li>
       <li class="sitemap-item"><a href="http://" target="_blank" rel="noopener noreferrer">&copy; copyright atout
           [tm]</a></li>
     </ul>
-  </footer>
+  </footer> -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
