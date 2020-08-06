@@ -11,6 +11,11 @@
   margin-bottom: 0px;
 }
 
+@media only screen and (max-width: 768px) {
+  .sitenav__search {
+    width: 50%;
+  }
+}
 /* Color Variables */
 /* Button Variables */
 /* Font Variables */
@@ -111,6 +116,11 @@
   height: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  .sitenav {
+    width: calc(100% - 200px);
+  }
+}
 /* Color Variables */
 /* Button Variables */
 /* Font Variables */
@@ -203,6 +213,11 @@
   margin-bottom: 0px;
 }
 
+@media only screen and (max-width: 768px) {
+  .main-section {
+    width: calc(100% - 200px);
+  }
+}
 /* Color Variables */
 /* Button Variables */
 /* Font Variables */
@@ -522,6 +537,11 @@
   border-top: 1px solid #136ed1;
 }
 
+@media only screen and (max-width: 768px) {
+  .main-sidebar {
+    width: 200px;
+  }
+}
 /* Color Variables */
 /* Button Variables */
 /* Font Variables */

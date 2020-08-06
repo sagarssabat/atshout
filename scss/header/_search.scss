@@ -10,3 +10,11 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .sitenav {
+    &__search {
+      width: 50%;
+    }
+  }
+}

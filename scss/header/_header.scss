@@ -90,3 +90,9 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .sitenav {
+    width: calc(100% - 200px);
+  }
+}
