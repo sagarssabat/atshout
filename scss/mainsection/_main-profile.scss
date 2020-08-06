@@ -24,4 +24,13 @@
       overflow-y: auto;
     }
   }
+
+  .btn-add {
+    min-width: auto;
+
+    .feather {
+      margin-right: 0px;
+      color: $--color-primary;
+    }
+  }
 }

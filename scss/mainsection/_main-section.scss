@@ -42,10 +42,21 @@
     }
   }
 
-  .form-title {
+  .form-title,
+  .tab-content-head .title {
     font-family: $--font-bold;
     font-size: 20px;
     margin-bottom: 15px;
     text-transform: capitalize;
+  }
+
+  .tab-content-head {
+    @include flexbox();
+    @include align-items(center);
+    margin-bottom: 15px;
+
+    .title {
+      margin-bottom: 0px;
+    }
   }
 }
