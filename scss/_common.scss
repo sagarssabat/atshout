@@ -312,3 +312,33 @@ img {
 .site-content {
   background-color: $--color-primary;
 }
+
+.custom-row {
+  .head {
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
+    margin-bottom: 15px;
+
+    .title {
+      font-family: $--font-bold;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+
+    .view-all {
+      font-family: $--font-medium;
+      color: $--color-highlight;
+      font-size: 16px;
+      text-transform: capitalize;
+    }
+  }
+
+  .body {
+    min-height: 100px;
+  }
+
+  &+.custom-row {
+    margin-top: 20px;
+  }
+}

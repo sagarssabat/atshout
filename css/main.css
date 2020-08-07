@@ -795,4 +795,38 @@ img {
   background-color: #5aa2f0;
 }
 
+.custom-row .head {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.custom-row .head .title {
+  font-family: "Dosis-Bold";
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.custom-row .head .view-all {
+  font-family: "Dosis-Medium";
+  color: #E9922C;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.custom-row .body {
+  min-height: 100px;
+}
+.custom-row + .custom-row {
+  margin-top: 20px;
+}
+
 /*# sourceMappingURL=main.css.map */
