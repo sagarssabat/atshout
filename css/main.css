@@ -149,9 +149,19 @@
 }
 
 .main-section {
-  width: calc(100% - 230px);
+  position: relative;
+  background-color: #ffffff;
+  width: calc(100% - 250px);
   padding-top: 70px;
   margin-left: auto;
+  /*margin right 20px adjusted in calculated width*/
+  margin-right: 20px;
+  height: 97%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  overflow-y: auto;
+}
+.main-section.main-profile {
+  overflow-y: unset;
 }
 .main-section .content-head {
   display: -moz-box;
@@ -171,15 +181,25 @@
   border-bottom: 1px solid #F2EDED;
 }
 .main-section .content-title {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
   font-family: "Dosis-Bold";
   font-size: 20px;
   line-height: 1.1;
+  text-transform: capitalize;
 }
 .main-section .content-title .feather {
   width: 20px;
   height: 20px;
 }
 .main-section .content-body {
+  position: relative;
   padding: 20px 15px;
 }
 .main-section .content-body--aside {
@@ -506,11 +526,18 @@
 .main-sidebar .sidebar__links:nth-last-child(1) {
   background-color: #d4e2f3;
 }
+.main-sidebar .sidebar__links:nth-last-child(1):before {
+  content: "";
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #d4e2f3;
+  z-index: -1;
+}
 .main-sidebar .sidebar__links:nth-last-child(1) .sidebar__linkitem a {
   color: #000000;
-}
-.main-sidebar .sidebar__links:nth-last-child(1) .sidebar__linkitem a:hover {
-  background-color: #acc7e8;
 }
 .main-sidebar .sidebar__linkitem a {
   display: -moz-box;
@@ -528,13 +555,6 @@
   color: #ffffff;
   text-transform: capitalize;
   border-left: 3px solid transparent;
-}
-.main-sidebar .sidebar__linkitem a:hover, .main-sidebar .sidebar__linkitem a.active {
-  background-color: #2b88ec;
-  border-color: #ffffff;
-}
-.main-sidebar .sidebar__linkitem + .sidebar__linkitem {
-  border-top: 1px solid #136ed1;
 }
 
 @media only screen and (max-width: 768px) {
@@ -751,6 +771,10 @@ img {
   -ms-align-items: center;
   align-items: center;
   padding: 5px;
+}
+
+.site-content {
+  background-color: #5aa2f0;
 }
 
 /*# sourceMappingURL=main.css.map */

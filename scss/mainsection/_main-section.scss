@@ -1,9 +1,21 @@
 @import "_main-profile.scss";
 
 .main-section {
-  width: calc(100% - 230px);
+  position: relative;
+  background-color: $--color-white;
+  width: calc(100% - 250px);
   padding-top: 70px;
   margin-left: auto;
+  /*margin right 20px adjusted in calculated width*/
+  margin-right: 20px;
+  height: 97%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  overflow-y: auto;
+
+  &.main-profile {
+    overflow-y: unset;
+  }
+
 
   .content {
     &-head {
@@ -15,9 +27,12 @@
     }
 
     &-title {
+      @include flexbox();
+      @include align-items(center);
       font-family: $--font-bold;
       font-size: 20px;
       line-height: 1.1;
+      text-transform: capitalize;
 
       .feather {
         width: 20px;
@@ -26,6 +41,7 @@
     }
 
     &-body {
+      position: relative;
       padding: 20px 15px;
 
       &--aside {

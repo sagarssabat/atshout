@@ -59,15 +59,18 @@
         </a>
       </div>
       <nav class="sidebar__links">
-        <ul class="sidebar__linklist">
+        <ul class="sidebar__linklist nav-pills" id="v-pills-tab" role="tablist">
           <li class="sidebar__linkitem">
-            <a data-toggle="pill" href="#v-pills-pgpkeys"><i data-feather="key"></i>PGP keys</a>
+            <a class="nav-link active" data-toggle="pill" href="#v-pills-pgpkeys" role="tab" aria-selected="true"><i
+                data-feather="key"></i>PGP keys</a>
           </li>
           <li class="sidebar__linkitem">
-            <a data-toggle="pill" href="#v-pills-password"><i data-feather="lock"></i>password</a>
+            <a data-toggle="pill" href="#v-pills-password" role="tab" aria-selected="false"><i
+                data-feather="lock"></i>password</a>
           </li>
           <li class="sidebar__linkitem">
-            <a data-toggle="pill" href="#v-pills-info"><i data-feather="alert-circle"></i>info</a>
+            <a data-toggle="pill" href="#v-pills-info" role="tab" aria-selected="false"><i
+                data-feather="alert-circle"></i>info</a>
           </li>
         </ul>
       </nav>
@@ -79,14 +82,14 @@
         </ul>
       </nav>
     </aside>
-    <div class="main-section main-profile">
+    <div class="main-section">
       <div class="tab-content" id="v-pills-tabContent">
         <div class="tab-pane fade show active" id="v-pills-pgpkeys" role="tabpanel">
           <div class="content-head">
             <h1 class="content-title"><i data-feather="key"></i>PGP public key</h1>
           </div>
           <div class="content-body">
-            <form class="custom-form">
+            <form class="form-fingerprint custom-form">
               <div class="form-body">
                 <div class="form-group">
                   <label for="fingerprint">fingerprint</label>
@@ -107,14 +110,31 @@
         </div>
         <div class="tab-pane fade" id="v-pills-password" role="tabpanel">
           <div class="content-head">
-            <h1 class="content-title"><i data-feather="lock"></i>password</h1>
+            <h1 class="content-title"><i data-feather="lock"></i>change password</h1>
           </div>
           <div class="content-body">
+            <form class="form-change-pwd custom-form">
+              <div class="form-body">
+                <div class="form-group">
+                  <label for="oldpassword">old password</label>
+                  <input type="text" class="form-control" id="oldpassword">
+                </div>
+                <div class="form-group">
+                  <label for="newpassword">new Password</label>
+                  <input type="password" class="form-control" id="newpassword">
+                </div>
+                <div class="form-group">
+                  <label for="verifypassword">new Password</label>
+                  <input type="text" class="form-control" id="verifypassword">
+                </div>
+                <button type="submit" class="btn btn-primary btn-change">change</button>
+              </div>
+            </form>
           </div>
         </div>
         <div class="tab-pane fade" id="v-pills-info" role="tabpanel">
           <div class="content-head">
-            <h1 class="content-title"><i data-feather="alert-circle"></i>info</h1>
+            <h1 class="content-title"><i data-feather="alert-circle"></i>system information</h1>
           </div>
           <div class="content-body">
           </div>
