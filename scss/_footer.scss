@@ -1,20 +1,15 @@
 @import "_mixins.scss";
 @import "_variables.scss";
 
+footer {
+  padding: 0px 15px;
+  position: relative;
+}
+
 .sitemap {
-  &-list {
-    @include flexbox();
-    @include justify-content(center);
-    @include align-items(center);
-    height: 40px;
-  }
-
   &-item {
+    font-size: 14px;
+    padding: 0 12px;
     text-transform: capitalize;
-    padding: 0 5px;
-
-    &+.sitemap-item {
-      border-left: 1px solid $--color-primary;
-    }
   }
 }
