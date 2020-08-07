@@ -20,7 +20,71 @@
 /* Button Variables */
 /* Font Variables */
 .sitenav__login {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
   margin-left: 20px;
+}
+.sitenav__login .feather {
+  width: 18px;
+  height: 18px;
+}
+.sitenav__login .icon-vertical {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+.sitenav__login .dropdown-item {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.sitenav__login .user-avtar {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  font-family: "Dosis-Bold";
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  font-size: 18px;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+.sitenav__login .user-details {
+  color: #ffffff;
+  line-height: 1.2;
+  text-align: right;
+  text-transform: capitalize;
+}
+.sitenav__login .user-details span {
+  display: block;
+}
+.sitenav__login .user-details .name {
+  font-family: "Dosis-Bold";
+  font-size: 16px;
+}
+.sitenav__login .user-details .role {
+  font-size: 14px;
 }
 
 .sitenav {
@@ -614,6 +678,8 @@ button.btn:focus {
 }
 button.btn-icon {
   min-width: auto;
+  border: none;
+  background: transparent;
 }
 button.btn-icon .feather {
   margin-right: 0px;

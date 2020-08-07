@@ -3,8 +3,58 @@
 
 .sitenav {
   &__login {
+    @include flexbox();
+    @include align-items(center);
     margin-left: 20px;
 
-    // .user-avtar {}
+    .feather {
+      width: 18px;
+      height: 18px;
+    }
+
+    .icon-vertical {
+      width: 40px;
+      height: 40px;
+      margin-left: 10px;
+    }
+
+    .dropdown-item {
+      @include flexbox();
+      @include align-items(center);
+    }
+
+    .user {
+      &-avtar {
+        @include flexbox();
+        @include justify-content(center);
+        @include align-items(center);
+        font-family: $--font-bold;
+        background-color: rgba($--color-white, 0.5);
+        color: $--color-white;
+        font-size: 18px;
+        margin-left: 20px;
+        text-transform: uppercase;
+      }
+
+      &-details {
+        color: $--color-white;
+        line-height: 1.2;
+        text-align: right;
+        text-transform: capitalize;
+
+        span {
+          display: block;
+        }
+
+        .name {
+          font-family: $--font-bold;
+          font-size: 16px;
+        }
+
+        .role {
+          font-size: 14px;
+        }
+      }
+    }
   }
 }

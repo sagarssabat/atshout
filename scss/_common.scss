@@ -81,6 +81,8 @@ button {
 
   &.btn-icon {
     min-width: auto;
+    border: none;
+    background: transparent;
 
     .feather {
       margin-right: 0px;
