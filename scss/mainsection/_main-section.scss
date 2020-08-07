@@ -12,11 +12,6 @@
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   overflow-y: auto;
 
-  &.main-profile {
-    overflow-y: unset;
-  }
-
-
   .content {
     &-head {
       @include flexbox();

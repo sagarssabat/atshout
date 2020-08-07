@@ -136,9 +136,7 @@
   top: -20px;
 }
 .main-profile .content-body--main {
-  height: calc(100vh - 180px);
   position: relative;
-  overflow-y: auto;
 }
 .main-profile .btn-add {
   min-width: auto;
@@ -159,9 +157,6 @@
   height: 97%;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   overflow-y: auto;
-}
-.main-section.main-profile {
-  overflow-y: unset;
 }
 .main-section .content-head {
   display: -moz-box;
