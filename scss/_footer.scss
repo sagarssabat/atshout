@@ -7,6 +7,11 @@ footer {
 }
 
 .sitemap {
+  &-list {
+    width: 75%;
+    margin: 0 auto;
+  }
+
   &-item {
     font-size: 14px;
     padding: 0 12px;

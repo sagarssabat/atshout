@@ -33,6 +33,7 @@
 .sitenav__login .feather {
   width: 18px;
   height: 18px;
+  color: #ffffff;
 }
 .sitenav__login .icon-vertical {
   width: 40px;
@@ -406,6 +407,10 @@ footer {
   position: relative;
 }
 
+.sitemap-list {
+  width: 75%;
+  margin: 0 auto;
+}
 .sitemap-item {
   font-size: 14px;
   padding: 0 12px;
@@ -554,9 +559,6 @@ footer {
   margin-left: 10px;
 }
 .main-sidebar .sidebar__links {
-  overflow-y: auto;
-}
-.main-sidebar .sidebar__links:nth-of-type(1) {
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -565,10 +567,14 @@ footer {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  height: 49%;
+  overflow-y: auto;
 }
-.main-sidebar .sidebar__links:nth-of-type(1) .sidebar__linklist {
-  width: 100%;
+.main-sidebar .sidebar__links .sidebar__linklist {
+  width: 75%;
+  margin: 0 auto;
+}
+.main-sidebar .sidebar__links:nth-of-type(1) {
+  height: 49%;
 }
 .main-sidebar .sidebar__links:nth-of-type(2) {
   height: 30%;
@@ -601,7 +607,6 @@ footer {
   max-height: 44px;
   color: #ffffff;
   text-transform: capitalize;
-  border-left: 3px solid transparent;
 }
 
 @media only screen and (max-width: 768px) {

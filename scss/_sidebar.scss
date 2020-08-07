@@ -21,18 +21,20 @@
   .sidebar {
     &__links {
       // height: 40%;
+      @include flexbox();
+      @include align-items(center);
       overflow-y: auto;
 
+      .sidebar {
+        &__linklist {
+          width: 75%;
+          margin: 0 auto;
+        }
+      }
+
       &:nth-of-type(1) {
-        @include flexbox();
-        @include align-items(center);
         height: 49%;
 
-        .sidebar {
-          &__linklist {
-            width: 100%;
-          }
-        }
       }
 
       &:nth-of-type(2) {
@@ -75,7 +77,7 @@
         max-height: 44px;
         color: $--color-white;
         text-transform: capitalize;
-        border-left: 3px solid transparent;
+        // border-left: 3px solid transparent;
 
         // &:hover,
         // &.active {
