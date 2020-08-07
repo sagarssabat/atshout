@@ -3,10 +3,35 @@
 
 .sitenav {
   &__search {
-    width: 30%;
+    width: 35%;
 
     .form-group {
       margin-bottom: 0px;
+    }
+
+    .form-control {
+      background-color: $--color-dark-primary;
+      border: $--color-dark-primary;
+
+      &:focus {
+        background-color: $--color-dark-primary;
+        border: $--color-dark-primary;
+      }
+    }
+
+    .btn-search {
+      line-height: 1;
+    }
+
+    .input-group-append {
+      background-color: $--color-dark-primary;
+      border-radius: .25rem;
+
+      .feather {
+        width: 18px;
+        height: 18px;
+        color: $--color-white;
+      }
     }
   }
 }

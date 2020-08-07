@@ -336,3 +336,25 @@ img {
     margin-top: 20px;
   }
 }
+
+.btn--align-right {
+  transform: translateX(-100%);
+  left: 100%;
+  position: relative;
+}
+
+.custom-btn-group {
+  text-align: right;
+
+  .btn {
+    &+.btn {
+      margin-left: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  button {
+    min-width: 80px;
+  }
+}
