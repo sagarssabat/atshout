@@ -68,6 +68,7 @@ a {
 button {
   font-family: $--font-medium;
   min-width: 125px;
+  padding: 4px 8px;
   cursor: pointer;
   text-transform: capitalize;
 
@@ -129,6 +130,30 @@ img {
   &:hover {
     background-color: darken($--btn-secondary, 10%);
     border: 1px solid darken($--btn-secondary, 10%);
+    color: $--color-white;
+  }
+}
+
+.btn-success {
+  background-color: $--btn-success;
+  border: 1px solid $--btn-success;
+  color: $--color-white;
+
+  &:hover {
+    background-color: darken($--btn-success, 10%);
+    border: 1px solid darken($--btn-success, 10%);
+    color: $--color-white;
+  }
+}
+
+.btn-danger {
+  background-color: $--btn-danger;
+  border: 1px solid $--btn-danger;
+  color: $--color-white;
+
+  &:hover {
+    background-color: darken($--btn-danger, 10%);
+    border: 1px solid darken($--btn-danger, 10%);
     color: $--color-white;
   }
 }

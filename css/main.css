@@ -620,6 +620,7 @@ a:hover {
 button {
   font-family: "Dosis-Medium";
   min-width: 125px;
+  padding: 4px 8px;
   cursor: pointer;
   text-transform: capitalize;
 }
@@ -671,6 +672,28 @@ img {
 .btn-highlight:hover {
   background-color: #cd7815;
   border: 1px solid #cd7815;
+  color: #ffffff;
+}
+
+.btn-success {
+  background-color: #05C953;
+  border: 1px solid #05C953;
+  color: #ffffff;
+}
+.btn-success:hover {
+  background-color: #04973e;
+  border: 1px solid #04973e;
+  color: #ffffff;
+}
+
+.btn-danger {
+  background-color: #ED0F0F;
+  border: 1px solid #ED0F0F;
+  color: #ffffff;
+}
+.btn-danger:hover {
+  background-color: #bd0c0c;
+  border: 1px solid #bd0c0c;
   color: #ffffff;
 }
 
