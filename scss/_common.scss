@@ -116,14 +116,14 @@ img {
   }
 }
 
-.btn-highlight {
-  background-color: $--btn-secondary;
-  border: 1px solid $--btn-secondary;
+.btn-orange {
+  background-color: $--btn-orange;
+  border: 1px solid $--btn-orange;
   color: $--color-white;
 
   &:hover {
-    background-color: darken($--btn-secondary, 10%);
-    border: 1px solid darken($--btn-secondary, 10%);
+    background-color: darken($--btn-orange, 10%);
+    border: 1px solid darken($--btn-orange, 10%);
     color: $--color-white;
   }
 }

@@ -735,12 +735,12 @@ img {
   border: 1px solid #2b88ec;
 }
 
-.btn-highlight {
+.btn-orange {
   background-color: #E9922C;
   border: 1px solid #E9922C;
   color: #ffffff;
 }
-.btn-highlight:hover {
+.btn-orange:hover {
   background-color: #cd7815;
   border: 1px solid #cd7815;
   color: #ffffff;
