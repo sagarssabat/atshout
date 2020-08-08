@@ -17,6 +17,11 @@
         background-color: $--color-dark-primary;
         border: $--color-dark-primary;
       }
+
+      &::placeholder {
+        /* Edge */
+        color: $--color-white;
+      }
     }
 
     .btn-search {

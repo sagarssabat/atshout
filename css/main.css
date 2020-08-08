@@ -18,6 +18,10 @@
   background-color: #94C0F9;
   border: #94C0F9;
 }
+.sitenav__search .form-control::placeholder {
+  /* Edge */
+  color: #ffffff;
+}
 .sitenav__search .btn-search {
   line-height: 1;
 }
