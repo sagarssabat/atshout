@@ -637,6 +637,28 @@ footer {
     width: 200px;
   }
 }
+.static-info ul,
+.static-info ol,
+.static-info p {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.static-info ul {
+  padding-inline-start: 40px;
+  list-style: disc;
+}
+.static-info li {
+  margin-bottom: 15px;
+}
+.static-info a {
+  font-family: "Dosis-SemiBold";
+}
+.static-info .title {
+  font-family: "Dosis-Bold";
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
 /* Color Variables */
 /* Button Variables */
 /* Font Variables */
