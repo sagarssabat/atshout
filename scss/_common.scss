@@ -384,6 +384,10 @@ img {
     }
 
     &-menu {
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.2s;
+
       li {
         padding: 4px 12px;
       }
@@ -393,6 +397,14 @@ img {
       font-family: $--font-semi-bold;
       padding: 5px 20px;
       min-width: auto;
+    }
+
+    &:hover {
+      .dropdown-menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 

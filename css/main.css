@@ -1021,6 +1021,11 @@ img {
 .custom-filter-group .dropdown + .dropdown {
   margin-left: 8px;
 }
+.custom-filter-group .dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
 .custom-filter-group .dropdown-menu li {
   padding: 4px 12px;
 }
@@ -1028,6 +1033,11 @@ img {
   font-family: "Dosis-SemiBold";
   padding: 5px 20px;
   min-width: auto;
+}
+.custom-filter-group .dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 .custom-filter-group .filter-label {
   display: -moz-box;
