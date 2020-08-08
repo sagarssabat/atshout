@@ -1167,6 +1167,7 @@ img {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .custom-filter-group .dropdown + .dropdown {
   margin-left: 8px;

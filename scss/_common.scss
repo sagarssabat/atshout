@@ -376,6 +376,7 @@ img {
   .dropdown-list {
     @include flexbox();
     @include align-items(center);
+    flex-wrap: wrap
   }
 
   .dropdown {
