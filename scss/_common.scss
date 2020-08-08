@@ -441,6 +441,45 @@ img {
   width: 100%;
 }
 
+// name chip css
+.chip {
+  margin: 10px 0;
+
+  &-list {
+    @include flexbox();
+  }
+
+  &-item {
+    @include flexbox();
+    @include align-items(center);
+    @include roundedCorners(5);
+    border: 1px solid $--color-black;
+    padding: 4px 34px 4px 8px;
+    position: relative;
+
+    &+.chip-item {
+      margin-left: 8px;
+    }
+
+    .feather {
+      width: 14px;
+      height: 14px;
+    }
+
+    .btn {
+      padding: 0 5px;
+      line-height: 0.8;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      border-left: 1px solid $--color-black;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   button {
     min-width: 80px;
