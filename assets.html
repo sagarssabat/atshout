@@ -53,27 +53,23 @@
           </a>
         </div>
         <nav class="sidebar__links">
-          <ul class="sidebar__linklist nav nav-pills flex-column" id="v-pills-tab" role="tablist">
+          <ul class="sidebar__linklist">
             <li class="sidebar__linkitem">
-              <a class="nav-link active" data-toggle="pill" href="#v-pills-pgpkeys" role="tab" aria-selected="true"><i
-                  data-feather="key"></i>PGP keys</a>
+              <a href="/dashboard.html"><i data-feather="layout"></i>dashboard</a>
             </li>
             <li class="sidebar__linkitem">
-              <a data-toggle="pill" href="#v-pills-password" role="tab" aria-selected="false"><i
-                  data-feather="lock"></i>password</a>
+              <a href="/assets.html"><i data-feather="box"></i>assets</a>
             </li>
             <li class="sidebar__linkitem">
-              <a data-toggle="pill" href="#v-pills-subnets" role="tab" aria-selected="false"><i
-                  data-feather="git-commit"></i>subnets</a>
-            </li>
-            <li class="sidebar__linkitem">
-              <a data-toggle="pill" href="#v-pills-info" role="tab" aria-selected="false"><i
-                  data-feather="alert-circle"></i>info</a>
+              <a href="/reporting.html"><i data-feather="pie-chart"></i>reporting</a>
             </li>
           </ul>
         </nav>
         <nav class="sidebar__links">
           <ul class="sidebar__linklist">
+            <li class="sidebar__linkitem">
+              <a href="/settings.html"><i data-feather="sliders"></i>settings</a>
+            </li>
             <li class="sidebar__linkitem">
               <a href=""><i data-feather="log-out"></i>logout</a>
             </li>
@@ -89,56 +85,117 @@
       </aside>
       <div class="main-section">
         <div class="content-head">
-          <h1 class="content-title">DESKTOP-W12L003</h1>
+          <h1 class="content-title"><i data-feather="box"></i>Assets</h1>
+          <button type="button" class="btn btn-dark-primary btn-import">import</button>
         </div>
         <div class="content-body">
-          <div class="row">
-            <div class="col-md-4">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <th scope="row">Brand</th>
-                    <td>Dell</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Model</th>
-                    <td>XPS 3000</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Serial</th>
-                    <td>CZ3117EPBJM</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Processor</th>
-                    <td>1 x i7 7440</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">RAM</th>
-                    <td>8 GB</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Disks</th>
-                    <td>1 x 512 GB (SAMSUNG)</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">IP Address</th>
-                    <td>10.10.10.2</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">MAC Address</th>
-                    <td>5F:0D:13:CA:D8:30</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Users</th>
-                    <td>administrator<br>idoe</td>
-                  </tr>
-                </tbody>
-              </table>
+          <div class="custom-filter-group">
+            <p class="filter-label"><i data-feather="filter"></i>filter by:</p>
+            <div class="dropdown-list">
+              <div class="dropdown">
+                <button class="btn border--highlight" type="button" data-toggle="dropdown">Tags</button>
+                <ul class="dropdown-menu">
+                  <input class="form-control" id="filterTags" type="text" placeholder="Search..">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                  <li><a href="#">jQuery</a></li>
+                  <li><a href="#">Bootstrap</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn border--dark-blue" type="button" data-toggle="dropdown">OS</button>
+                <ul class="dropdown-menu">
+                  <input class="form-control" id="filterOs" type="text" placeholder="Search..">
+                  <li><a href="#">windows</a></li>
+                  <li><a href="#">ios</a></li>
+                  <li><a href="#">ubuntu</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn border--pink" type="button" data-toggle="dropdown">type</button>
+                <ul class="dropdown-menu">
+                  <input class="form-control" id="filterType" type="text" placeholder="Search..">
+                  <li><a href="#">type 1</a></li>
+                  <li><a href="#">type 2</a></li>
+                  <li><a href="#">type 3</a></li>
+                  <li><a href="#">type 4</a></li>
+                  <li><a href="#">type 5</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn border--green" type="button" data-toggle="dropdown">hardware</button>
+                <ul class="dropdown-menu">
+                  <input class="form-control" id="filterHardware" type="text" placeholder="Search..">
+                  <li><a href="#">hardware 1</a></li>
+                  <li><a href="#">hardware 2</a></li>
+                  <li><a href="#">hardware 3</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn border--red" type="button" data-toggle="dropdown">ports</button>
+                <ul class="dropdown-menu">
+                  <input class="form-control" id="filterPorts" type="text" placeholder="Search..">
+                  <li><a href="#">port 1</a></li>
+                  <li><a href="#">port 2</a></li>
+                  <li><a href="#">port 3</a></li>
+                  <li><a href="#">port 4</a></li>
+                  <li><a href="#">port 5</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn border--primary" type="button" data-toggle="dropdown">user</button>
+                <ul class="dropdown-menu">
+                  <input class="form-control" id="filterUsers" type="text" placeholder="Search..">
+                  <li><a href="#">sriram</a></li>
+                  <li><a href="#">kiran</a></li>
+                  <li><a href="#">rishi</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="col-md-4">
-            </div>
-            <div class="col-md-4"></div>
           </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">IP</th>
+                <th scope="col">On</th>
+                <th scope="col">Name</th>
+                <th scope="col">Os</th>
+                <th scope="col">Type</th>
+                <th scope="col">MAC</th>
+                <th scope="col">Vendor</th>
+                <th scope="col">Hardware</th>
+                <th scope="col">Ports</th>
+                <th scope="col">Last Scanned</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">10.10.10.1</th>
+                <td>Mark</td>
+                <td>Router</td>
+                <td></td>
+                <td>Server</td>
+                <td>AD:0D:13:AF:D8:A3</td>
+                <td>DLink</td>
+                <td></td>
+                <td>5</td>
+                <td>a day ago</td>
+              </tr>
+              <tr>
+                <th scope="row">10.10.10.2</th>
+                <td>Jacob</td>
+                <td>DESKTOP-W12L003</td>
+                <td>Windows 10</td>
+                <td>Laptop</td>
+                <td>5F:0D:13:CA:D8:30</td>
+                <td>Intel</td>
+                <td>Dell</td>
+                <td>2</td>
+                <td>a day ago</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
@@ -157,6 +214,7 @@
     feather.replace()
 
   </script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

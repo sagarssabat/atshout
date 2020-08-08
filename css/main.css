@@ -242,6 +242,7 @@
   margin-bottom: 20px;
   min-height: calc(100% - 20px);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
 }
 .main-section .content-head {
   display: -moz-box;
@@ -281,7 +282,6 @@
 .main-section .content-body {
   padding: 20px 15px;
   position: relative;
-  overflow: hidden;
 }
 .main-section .content-body--aside {
   position: absolute;
@@ -653,6 +653,7 @@ body.home {
   background-color: #5aa2f0;
 }
 
+.site-wrap,
 .site-content {
   height: 100%;
 }
@@ -771,6 +772,17 @@ img {
   color: #ffffff;
 }
 
+.btn-dark-primary {
+  background-color: #0E64C8;
+  border: 1px solid #0E64C8;
+  color: #ffffff;
+}
+.btn-dark-primary:hover {
+  background-color: #0b4c98;
+  border: 1px solid #0b4c98;
+  color: #ffffff;
+}
+
 .feather {
   margin-right: 10px;
 }
@@ -813,6 +825,7 @@ img {
 
 .table {
   font-size: 14px;
+  margin: 10px 0;
 }
 .table thead {
   background-color: #5aa2f0;
@@ -914,6 +927,77 @@ img {
 }
 .custom-btn-group .btn + .btn {
   margin-left: 15px;
+}
+
+.custom-filter-group {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.custom-filter-group .dropdown-list {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.custom-filter-group .dropdown + .dropdown {
+  margin-left: 8px;
+}
+.custom-filter-group .dropdown-menu li {
+  padding: 4px 12px;
+}
+.custom-filter-group .dropdown .btn {
+  font-family: "Dosis-SemiBold";
+  padding: 5px 20px;
+  min-width: auto;
+}
+.custom-filter-group .filter-label {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  font-family: "Dosis-Bold";
+  color: #5aa2f0;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+
+.border--highlight {
+  border: 1px solid #E9922C;
+}
+
+.border--dark-blue {
+  border: 1px solid #0E64C8;
+}
+
+.border--pink {
+  border: 1px solid #D72F73;
+}
+
+.border--green {
+  border: 1px solid #A1D72F;
+}
+
+.border--red {
+  border: 1px solid #D72F2F;
+}
+
+.border--primary {
+  border: 1px solid #5aa2f0;
 }
 
 @media only screen and (max-width: 768px) {

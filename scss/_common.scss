@@ -19,6 +19,7 @@ body {
   }
 }
 
+.site-wrap,
 .site-content {
   height: 100%;
 }
@@ -152,6 +153,18 @@ img {
   }
 }
 
+.btn-dark-primary {
+  background-color: $--btn-dark-primary;
+  border: 1px solid $--btn-dark-primary;
+  color: $--color-white;
+
+  &:hover {
+    background-color: darken($--btn-dark-primary, 10%);
+    border: 1px solid darken($--btn-dark-primary, 10%);
+    color: $--color-white;
+  }
+}
+
 .feather {
   margin-right: 10px;
 }
@@ -248,6 +261,7 @@ img {
 
 .table {
   font-size: 14px;
+  margin: 10px 0;
 
   thead {
     background-color: $--color-primary;
@@ -352,6 +366,69 @@ img {
     }
   }
 }
+
+.custom-filter-group {
+  @include flexbox();
+  @include align-items(center);
+
+  .dropdown-list {
+    @include flexbox();
+    @include align-items(center);
+  }
+
+  .dropdown {
+    &+.dropdown {
+      margin-left: 8px;
+    }
+
+    &-menu {
+      li {
+        padding: 4px 12px;
+      }
+    }
+
+    .btn {
+      font-family: $--font-semi-bold;
+      padding: 5px 20px;
+      min-width: auto;
+    }
+  }
+
+  .filter-label {
+    @include flexbox();
+    @include align-items(center);
+    font-family: $--font-bold;
+    color: $--color-primary;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    text-transform: capitalize;
+  }
+}
+
+.border--highlight {
+  border: 1px solid $--color-highlight;
+}
+
+.border--dark-blue {
+  border: 1px solid #0E64C8;
+}
+
+.border--pink {
+  border: 1px solid #D72F73;
+}
+
+.border--green {
+  border: 1px solid #A1D72F;
+}
+
+.border--red {
+  border: 1px solid #D72F2F;
+}
+
+.border--primary {
+  border: 1px solid $--color-primary;
+}
+
 
 @media only screen and (max-width: 768px) {
   button {
