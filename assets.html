@@ -77,13 +77,14 @@
         </nav>
         <footer class="site-footer">
           <ul class="sitemap-list">
-            <li class="sitemap-item"><a href="http://" target="_blank" rel="noopener noreferrer">privacy policy</a></li>
+            <li class="sitemap-item"><a href="/privacy.html" target="_blank" rel="noopener noreferrer">privacy
+                policy</a></li>
             <li class="sitemap-item"><a href="http://" target="_blank" rel="noopener noreferrer">&copy; copyright atout
                 [tm]</a></li>
           </ul>
         </footer>
       </aside>
-      <div class="main-section">
+      <div class="main-section main-asset">
         <div class="content-head">
           <h1 class="content-title"><i data-feather="box"></i>Assets</h1>
           <button type="button" class="btn btn-dark-primary btn-import">import</button>
@@ -154,49 +155,73 @@
               </div>
             </div>
           </div>
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">IP</th>
-                <th scope="col">On</th>
-                <th scope="col">Name</th>
-                <th scope="col">Os</th>
-                <th scope="col">Type</th>
-                <th scope="col">MAC</th>
-                <th scope="col">Vendor</th>
-                <th scope="col">Hardware</th>
-                <th scope="col">Ports</th>
-                <th scope="col">Last Scanned</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">10.10.10.1</th>
-                <td>Mark</td>
-                <td>Router</td>
-                <td></td>
-                <td>Server</td>
-                <td>AD:0D:13:AF:D8:A3</td>
-                <td>DLink</td>
-                <td></td>
-                <td>5</td>
-                <td>a day ago</td>
-              </tr>
-              <tr>
-                <th scope="row">10.10.10.2</th>
-                <td>Jacob</td>
-                <td>DESKTOP-W12L003</td>
-                <td>Windows 10</td>
-                <td>Laptop</td>
-                <td>5F:0D:13:CA:D8:30</td>
-                <td>Intel</td>
-                <td>Dell</td>
-                <td>2</td>
-                <td>a day ago</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">IP</th>
+                  <th scope="col">On</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Os</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">MAC</th>
+                  <th scope="col">Vendor</th>
+                  <th scope="col">Hardware</th>
+                  <th scope="col">Ports</th>
+                  <th scope="col">Last Scanned</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">10.10.10.1</th>
+                  <td><i data-feather="alert-octagon"></i></td>
+                  <td>Router</td>
+                  <td></td>
+                  <td>Server</td>
+                  <td>AD:0D:13:AF:D8:A3</td>
+                  <td>DLink</td>
+                  <td></td>
+                  <td>5</td>
+                  <td>a day ago</td>
+                </tr>
+                <tr>
+                  <th scope="row">10.10.10.2</th>
+                  <td><i data-feather="circle"></i></td>
+                  <td>DESKTOP-W12L003</td>
+                  <td>Windows 10</td>
+                  <td>Laptop</td>
+                  <td>5F:0D:13:CA:D8:30</td>
+                  <td>Intel</td>
+                  <td>Dell</td>
+                  <td>2</td>
+                  <td>a day ago</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+        <nav aria-label="asset-navigation" class="asset-navigation">
+          <ul class="pagination">
+            <li class="page-item disabled">
+              <span class="page-link">First</span>
+            </li>
+            <li class="page-item">
+              <span class="page-link">Previous</span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active">
+              <span class="page-link"> 2 <span class="sr-only">(current)</span>
+              </span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">Last</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </section>
   </section>

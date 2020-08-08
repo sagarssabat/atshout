@@ -1,0 +1,10 @@
+@import "../_mixins.scss";
+@import "../_variables.scss";
+
+.main-asset {
+  .asset-navigation {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
+}

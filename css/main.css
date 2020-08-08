@@ -209,6 +209,15 @@
 /* Color Variables */
 /* Button Variables */
 /* Font Variables */
+.main-asset .asset-navigation {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+/* Color Variables */
+/* Button Variables */
+/* Font Variables */
 .main-profile .custom-form {
   padding: 0px;
 }
@@ -652,6 +661,7 @@ footer {
 }
 .static-info a {
   font-family: "Dosis-SemiBold";
+  color: #E9922C;
 }
 .static-info .title {
   font-family: "Dosis-Bold";
