@@ -230,6 +230,24 @@
   align-items: center;
 }
 
+.asset-detail table {
+  margin: 0px;
+}
+.asset-detail table tr:first-child td,
+.asset-detail table tr:first-child th {
+  border-top: none;
+}
+.asset-detail .list-item .title {
+  font-size: 18px;
+  padding: 12px 8px;
+  border-bottom: 1px solid #dee2e6;
+  text-transform: capitalize;
+}
+.asset-detail .list-item .body {
+  padding: 10px 8px;
+  text-transform: capitalize;
+}
+
 /* Color Variables */
 /* Button Variables */
 /* Font Variables */

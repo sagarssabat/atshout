@@ -14,3 +14,34 @@
     @include align-items(center);
   }
 }
+
+.asset-detail {
+  table {
+    margin: 0px;
+
+    tr {
+      &:first-child {
+
+        td,
+        th {
+          border-top: none;
+        }
+      }
+    }
+  }
+
+  .list-item {
+    .title {
+      font-size: 18px;
+      padding: 12px 8px;
+      border-bottom: 1px solid #dee2e6;
+      text-transform: capitalize;
+    }
+
+    .body {
+      padding: 10px 8px;
+      text-transform: capitalize;
+
+    }
+  }
+}
