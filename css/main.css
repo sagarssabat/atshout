@@ -214,6 +214,21 @@
   bottom: 15px;
   right: 15px;
 }
+.main-asset .filter-results {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
 
 /* Color Variables */
 /* Button Variables */
@@ -1083,6 +1098,26 @@ img {
   border-left: 1px solid #000000;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
+}
+
+.show-count .form-group {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.show-count label {
+  font-family: "Dosis-SemiBold";
+  color: #5aa2f0;
+  margin-bottom: 0px;
+}
+.show-count .form-control {
+  width: 80px;
+  margin: 0 5px;
 }
 
 @media only screen and (max-width: 768px) {

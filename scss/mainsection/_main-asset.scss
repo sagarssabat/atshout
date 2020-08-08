@@ -7,4 +7,10 @@
     bottom: 15px;
     right: 15px;
   }
+
+  .filter-results {
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
+  }
 }
