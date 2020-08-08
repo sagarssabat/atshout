@@ -6,19 +6,17 @@ $(document).ready(function () {
     });
   });
 
-  // $('.datepicker').datepicker();
-
-  $('input[name="dates"]').daterangepicker();
-  $('#datepicker').daterangepicker({
-    "singleDatePicker": true,
-    "showDropdowns": false,
-    "locale": {
-      "format": "MM/DD/YYYY"
-    },
-    "opens": "center"
+  $('input[name="daterange"]').daterangepicker({
+    opens: 'left'
+  }, function (start, end, label) {
+    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
   });
 
-  // $(function () {
-  //   $('#datetimepicker4').datetimepicker();
-  // });
+
+  $('[data-toggle="tooltip"]').tooltip(show);
+
 });
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

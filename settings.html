@@ -103,7 +103,7 @@
             <li class="sitemap-item"><a href="/privacy.html" target="_blank" rel="noopener noreferrer">privacy
                 policy</a></li>
             <li class="sitemap-item"><a href="http://" target="_blank" rel="noopener noreferrer">&copy; copyright atout
-                [tm]</a></li>
+                &trade;</a></li>
           </ul>
         </footer>
       </aside>
@@ -138,11 +138,11 @@
                       </div>
                       <div class="form-body">
                         <div class="form-group">
-                          <label for="username">Username</label>
+                          <label for="username">name</label>
                           <input type="text" class="form-control" id="username">
                         </div>
                         <div class="form-group">
-                          <label for="useremail">Password</label>
+                          <label for="useremail">email</label>
                           <input type="email" class="form-control" id="useremail">
                         </div>
                       </div>
@@ -177,8 +177,10 @@
               <div class="tab-pane fade" id="v-pills-team" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                 <div class="tab-content-head">
                   <h3 class="title">team users</h3>
-                  <button type="button" class="btn btn-add" data-toggle="modal" data-target="#addNewMember"><i
-                      data-feather="plus-circle"></i></button>
+                  <button type="button" class="btn btn-add custom-tooltip" data-toggle="modal"
+                    data-target="#addNewMember" data-tooltip="add a new team member" data-tooltip-location="right">
+                    <i data-feather="plus-circle"></i>
+                  </button>
                 </div>
                 <div class="tab-content-body">
                   <div class="table-responsive">
@@ -238,7 +240,8 @@
               <div class="tab-pane fade" id="v-pills-scanner" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                 <div class="tab-content-head">
                   <h3 class="title">scanners</h3>
-                  <button type="button" class="btn btn-add" data-toggle="modal" data-target="#addNewScanner"><i
+                  <button type="button" class="btn btn-add custom-tooltip" data-toggle="modal"
+                    data-target="#addNewScanner" data-tooltip="add a scanner" data-tooltip-location="right"><i
                       data-feather="plus-circle"></i></button>
                 </div>
                 <div class="tab-content-body">
@@ -479,6 +482,7 @@
     feather.replace()
 
   </script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

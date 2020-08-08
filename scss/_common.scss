@@ -1,4 +1,4 @@
-// @import "_datepick.scss";
+@import "_custom-tooltip.scss";
 @import "_fonts.scss";
 @import "_footer.scss";
 @import "_form.scss";
@@ -421,6 +421,7 @@ img {
   #datepicker {
     margin-left: 10px;
     line-height: 1.4;
+    min-width: 220px;
   }
 }
 
