@@ -13,228 +13,223 @@
 </head>
 
 <body>
-  <header class="site-header sitenav">
-    <div class="sitenav__menu">
-      <div class="container-fluid">
-        <div class="sitenav__wrap">
-          <!-- <div class="sitenav__hamburger">
-            <i data-feather="menu"></i>
-          </div> -->
-          <!-- <div class="sitenav__logo">
-            <a href="" target="_blank">
-              <img src="/assets/images/logo-white.png" alt="atout main logo in white">
-            </a>
-          </div> -->
-          <div class="sitenav__search">
-            <div class="form-group">
-              <input type="search" id="siteSearch" class="form-control">
+  <section class="site-wrap">
+    <header class="site-header sitenav">
+      <div class="sitenav__menu">
+        <div class="container-fluid">
+          <div class="sitenav__wrap">
+            <!-- <div class="sitenav__hamburger">
+              <i data-feather="menu"></i>
+            </div> -->
+            <!-- <div class="sitenav__logo">
+              <a href="" target="_blank">
+                <img src="/assets/images/logo-white.png" alt="atout main logo in white">
+              </a>
+            </div> -->
+            <div class="sitenav__search">
+              <div class="form-group">
+                <input type="search" id="siteSearch" class="form-control">
+              </div>
             </div>
-          </div>
-          <!-- <div class="sitenav__nav">
-            <nav class="sitenav__links">
-              <ul class="sitenav__linklist">
-                <li class="sitenav__linkitem">
-                  <a href=""><i data-feather="help-circle"></i>support</a>
-                </li>
-                <li class="sitenav__linkitem">
-                  <a href=""><i data-feather="sliders"></i>settings</a>
-                </li>
-              </ul>
-            </nav>
-          </div> -->
-          <div class="sitenav__login">
-            <div class="user-details">
-              <span class="name">some one</span>
-              <span class="role">admin</span>
-            </div>
-            <div class="user-avtar">
-              <span>so</span>
-            </div>
-            <div class="btn-group">
-              <button type="button" class="btn-icon icon-vertical" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                <i data-feather="more-vertical"></i> </button>
-              <div class="dropdown-menu dropdown-menu-right">
-                <button class="dropdown-item" type="button"><i data-feather="sliders"></i>settings</button>
-                <button class="dropdown-item" type="button"><i data-feather="log-out"></i>logout</button>
+            <!-- <div class="sitenav__nav">
+              <nav class="sitenav__links">
+                <ul class="sitenav__linklist">
+                  <li class="sitenav__linkitem">
+                    <a href=""><i data-feather="help-circle"></i>support</a>
+                  </li>
+                  <li class="sitenav__linkitem">
+                    <a href=""><i data-feather="sliders"></i>settings</a>
+                  </li>
+                </ul>
+              </nav>
+            </div> -->
+            <div class="sitenav__login">
+              <div class="user-details">
+                <span class="name">some one</span>
+                <span class="role">admin</span>
+              </div>
+              <div class="user-avtar">
+                <span>so</span>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn-icon icon-vertical" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <i data-feather="more-vertical"></i> </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <button class="dropdown-item" type="button"><i data-feather="sliders"></i>settings</button>
+                  <button class="dropdown-item" type="button"><i data-feather="log-out"></i>logout</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
-  <section class="site-content">
-    <aside class="main-sidebar">
-      <div class="sitenav__logo">
-        <a href="" target="_blank">
-          <img src="/assets/images/logo-white.png" alt="atout main logo in white">
-        </a>
+    </header>
+    <section class="site-content">
+      <aside class="main-sidebar">
+        <div class="sitenav__logo">
+          <a href="" target="_blank">
+            <img src="/assets/images/logo-white.png" alt="atout main logo in white">
+          </a>
+        </div>
+        <nav class="sidebar__links">
+          <ul class="sidebar__linklist nav nav-pills flex-column" id="v-pills-tab" role="tablist">
+            <li class="sidebar__linkitem">
+              <a class="nav-link active" data-toggle="pill" href="#v-pills-pgpkeys" role="tab" aria-selected="true"><i
+                  data-feather="key"></i>PGP keys</a>
+            </li>
+            <li class="sidebar__linkitem">
+              <a data-toggle="pill" href="#v-pills-password" role="tab" aria-selected="false"><i
+                  data-feather="lock"></i>password</a>
+            </li>
+            <li class="sidebar__linkitem">
+              <a data-toggle="pill" href="#v-pills-subnets" role="tab" aria-selected="false"><i
+                  data-feather="git-commit"></i>subnets</a>
+            </li>
+            <li class="sidebar__linkitem">
+              <a data-toggle="pill" href="#v-pills-info" role="tab" aria-selected="false"><i
+                  data-feather="alert-circle"></i>info</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="sidebar__links">
+          <ul class="sidebar__linklist">
+            <li class="sidebar__linkitem">
+              <a href=""><i data-feather="log-out"></i>logout</a>
+            </li>
+          </ul>
+        </nav>
+        <footer class="site-footer">
+          <ul class="sitemap-list">
+            <li class="sitemap-item"><a href="http://" target="_blank" rel="noopener noreferrer">privacy policy</a></li>
+            <li class="sitemap-item"><a href="http://" target="_blank" rel="noopener noreferrer">&copy; copyright atout
+                [tm]</a></li>
+          </ul>
+        </footer>
+      </aside>
+      <div class="main-section">
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-pgpkeys" role="tabpanel">
+            <div class="content-head">
+              <h1 class="content-title"><i data-feather="key"></i>PGP public key</h1>
+            </div>
+            <div class="content-body">
+              <form class="form-fingerprint custom-form">
+                <div class="form-body">
+                  <div class="form-group">
+                    <label for="fingerprint">fingerprint</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="fingerprint">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="publickey">public key</label>
+                    <textarea class="form-control" id="publickey" rows="6">
+                    </textarea>
+                  </div>
+                  <div class="custom-btn-group">
+                    <button type="submit" class="btn btn-orange btn-test">testcommunication</button>
+                    <button type="submit" class="btn btn-primary btn-save">save</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-password" role="tabpanel">
+            <div class="content-head">
+              <h1 class="content-title"><i data-feather="lock"></i>change password</h1>
+            </div>
+            <div class="content-body">
+              <form class="form-change-pwd custom-form">
+                <div class="form-body">
+                  <div class="form-group">
+                    <label for="oldpassword">old password</label>
+                    <input type="text" class="form-control" id="oldpassword">
+                  </div>
+                  <div class="form-group">
+                    <label for="newpassword">new Password</label>
+                    <input type="password" class="form-control" id="newpassword">
+                  </div>
+                  <div class="form-group">
+                    <label for="verifypassword">new Password</label>
+                    <input type="text" class="form-control" id="verifypassword">
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-change">change</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-subnets" role="tabpanel">
+            <div class="content-head">
+              <h1 class="content-title"><i data-feather="alert-circle"></i>IP and subnets ranges to scan</h1>
+            </div>
+            <div class="content-body">
+              <form class="form-change-pwd custom-form">
+                <div class="form-body">
+                  <label for="localipaddress">currently scanning</label>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <select multiple size="10" class="form-control" id="exampleFormControlSelect1">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                        </select>
+                      </div>
+                      <button type="submit" class="btn btn-primary btn-save btn--align-right">save</button>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="scanningaction">
+                      </div>
+                      <div class="custom-btn-group">
+                        <button type="submit" class="btn btn-danger btn-remove">remove</button>
+                        <button type="submit" class="btn btn-success btn-save">save</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-info" role="tabpanel">
+            <div class="content-head">
+              <h1 class="content-title"><i data-feather="alert-circle"></i>system information</h1>
+            </div>
+            <div class="content-body">
+              <form class="form-change-pwd custom-form">
+                <div class="form-body">
+                  <div class="form-group">
+                    <label for="localipaddress">local ip address</label>
+                    <input type="text" class="form-control" id="localipaddress">
+                  </div>
+                  <div class="form-group">
+                    <label for="publicipaddress">public ip address</label>
+                    <input type="text" class="form-control" id="publicipaddress">
+                  </div>
+                  <div class="form-group">
+                    <label for="memory">memory</label>
+                    <input type="text" class="form-control" id="memory">
+                  </div>
+                  <div class="form-group">
+                    <label for="diskspace">disk space (used/free)</label>
+                    <input type="text" class="form-control" id="diskspace">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-      <nav class="sidebar__links">
-        <ul class="sidebar__linklist nav nav-pills flex-column" id="v-pills-tab" role="tablist">
-          <li class="sidebar__linkitem">
-            <a class="nav-link active" data-toggle="pill" href="#v-pills-pgpkeys" role="tab" aria-selected="true"><i
-                data-feather="key"></i>PGP keys</a>
-          </li>
-          <li class="sidebar__linkitem">
-            <a data-toggle="pill" href="#v-pills-password" role="tab" aria-selected="false"><i
-                data-feather="lock"></i>password</a>
-          </li>
-          <li class="sidebar__linkitem">
-            <a data-toggle="pill" href="#v-pills-subnets" role="tab" aria-selected="false"><i
-                data-feather="git-commit"></i>subnets</a>
-          </li>
-          <li class="sidebar__linkitem">
-            <a data-toggle="pill" href="#v-pills-info" role="tab" aria-selected="false"><i
-                data-feather="alert-circle"></i>info</a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="sidebar__links">
-        <ul class="sidebar__linklist">
-          <li class="sidebar__linkitem">
-            <a href=""><i data-feather="log-out"></i>logout</a>
-          </li>
-        </ul>
-      </nav>
-      <footer class="site-footer">
-        <ul class="sitemap-list">
-          <li class="sitemap-item"><a href="http://" target="_blank" rel="noopener noreferrer">privacy policy</a></li>
-          <li class="sitemap-item"><a href="http://" target="_blank" rel="noopener noreferrer">&copy; copyright atout
-              [tm]</a></li>
-        </ul>
-      </footer>
-    </aside>
-    <div class="main-section">
-      <div class="tab-content" id="v-pills-tabContent">
-        <div class="tab-pane fade show active" id="v-pills-pgpkeys" role="tabpanel">
-          <div class="content-head">
-            <h1 class="content-title"><i data-feather="key"></i>PGP public key</h1>
-          </div>
-          <div class="content-body">
-            <form class="form-fingerprint custom-form">
-              <div class="form-body">
-                <div class="form-group">
-                  <label for="fingerprint">fingerprint</label>
-                  <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="fingerprint">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="publickey">public key</label>
-                  <textarea class="form-control" id="publickey" rows="6">
-                  </textarea>
-                </div>
-                <div class="custom-btn-group">
-                  <button type="submit" class="btn btn-orange btn-test">testcommunication</button>
-                  <button type="submit" class="btn btn-primary btn-save">save</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="v-pills-password" role="tabpanel">
-          <div class="content-head">
-            <h1 class="content-title"><i data-feather="lock"></i>change password</h1>
-          </div>
-          <div class="content-body">
-            <form class="form-change-pwd custom-form">
-              <div class="form-body">
-                <div class="form-group">
-                  <label for="oldpassword">old password</label>
-                  <input type="text" class="form-control" id="oldpassword">
-                </div>
-                <div class="form-group">
-                  <label for="newpassword">new Password</label>
-                  <input type="password" class="form-control" id="newpassword">
-                </div>
-                <div class="form-group">
-                  <label for="verifypassword">new Password</label>
-                  <input type="text" class="form-control" id="verifypassword">
-                </div>
-                <button type="submit" class="btn btn-primary btn-change">change</button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="v-pills-subnets" role="tabpanel">
-          <div class="content-head">
-            <h1 class="content-title"><i data-feather="alert-circle"></i>IP and subnets ranges to scan</h1>
-          </div>
-          <div class="content-body">
-            <form class="form-change-pwd custom-form">
-              <div class="form-body">
-                <label for="localipaddress">currently scanning</label>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <select multiple size="10" class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                      </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-save btn--align-right">save</button>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" id="scanningaction">
-                    </div>
-                    <div class="custom-btn-group">
-                      <button type="submit" class="btn btn-danger btn-remove">remove</button>
-                      <button type="submit" class="btn btn-success btn-save">save</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="v-pills-info" role="tabpanel">
-          <div class="content-head">
-            <h1 class="content-title"><i data-feather="alert-circle"></i>system information</h1>
-          </div>
-          <div class="content-body">
-            <form class="form-change-pwd custom-form">
-              <div class="form-body">
-                <div class="form-group">
-                  <label for="localipaddress">local ip address</label>
-                  <input type="text" class="form-control" id="localipaddress">
-                </div>
-                <div class="form-group">
-                  <label for="publicipaddress">public ip address</label>
-                  <input type="text" class="form-control" id="publicipaddress">
-                </div>
-                <div class="form-group">
-                  <label for="memory">memory</label>
-                  <input type="text" class="form-control" id="memory">
-                </div>
-                <div class="form-group">
-                  <label for="diskspace">disk space (used/free)</label>
-                  <input type="text" class="form-control" id="diskspace">
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   </section>
-  <!-- <footer class="site-footer">
-    <ul class="sitemap-list">
-      <li class="sitemap-item"><a href="http://" target="_blank" rel="noopener noreferrer">privacy policy</a></li>
-      <li class="sitemap-item"><a href="http://" target="_blank" rel="noopener noreferrer">&copy; copyright atout
-          [tm]</a></li>
-    </ul>
-  </footer> -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>

@@ -323,7 +323,7 @@
 /* Button Variables */
 /* Font Variables */
 .modal-backdrop {
-  background: rgba(242, 246, 250, 0.93);
+  background: rgba(242, 246, 250, 0.83);
 }
 .modal-backdrop.show {
   opacity: 1;
@@ -361,6 +361,9 @@
   opacity: 1;
   font-size: 22px;
   text-shadow: none;
+}
+.modal-open .site-wrap {
+  filter: blur(3px);
 }
 
 @font-face {

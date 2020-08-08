@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
     integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
-  <title>Dashboard</title>
+  <title>Asset Detail</title>
 </head>
 
 <body>
@@ -18,31 +18,11 @@
       <div class="sitenav__menu">
         <div class="container-fluid">
           <div class="sitenav__wrap">
-            <!-- <div class="sitenav__hamburger">
-              <i data-feather="menu"></i>
-            </div> -->
-            <!-- <div class="sitenav__logo">
-              <a href="" target="_blank">
-                <img src="/assets/images/logo-white.png" alt="atout main logo in white">
-              </a>
-            </div> -->
             <div class="sitenav__search">
               <div class="form-group">
                 <input type="search" id="siteSearch" class="form-control">
               </div>
             </div>
-            <!-- <div class="sitenav__nav">
-              <nav class="sitenav__links">
-                <ul class="sitenav__linklist">
-                  <li class="sitenav__linkitem">
-                    <a href=""><i data-feather="help-circle"></i>support</a>
-                  </li>
-                  <li class="sitenav__linkitem">
-                    <a href=""><i data-feather="sliders"></i>settings</a>
-                  </li>
-                </ul>
-              </nav>
-            </div> -->
             <div class="sitenav__login">
               <div class="user-details">
                 <span class="name">some one</span>
@@ -73,23 +53,27 @@
           </a>
         </div>
         <nav class="sidebar__links">
-          <ul class="sidebar__linklist">
+          <ul class="sidebar__linklist nav nav-pills flex-column" id="v-pills-tab" role="tablist">
             <li class="sidebar__linkitem">
-              <a href="/dashboard.html"><i data-feather="layout"></i>dashboard</a>
+              <a class="nav-link active" data-toggle="pill" href="#v-pills-pgpkeys" role="tab" aria-selected="true"><i
+                  data-feather="key"></i>PGP keys</a>
             </li>
             <li class="sidebar__linkitem">
-              <a href="/assets.html"><i data-feather="box"></i>assets</a>
+              <a data-toggle="pill" href="#v-pills-password" role="tab" aria-selected="false"><i
+                  data-feather="lock"></i>password</a>
             </li>
             <li class="sidebar__linkitem">
-              <a href="/reporting.html"><i data-feather="pie-chart"></i>reporting</a>
+              <a data-toggle="pill" href="#v-pills-subnets" role="tab" aria-selected="false"><i
+                  data-feather="git-commit"></i>subnets</a>
+            </li>
+            <li class="sidebar__linkitem">
+              <a data-toggle="pill" href="#v-pills-info" role="tab" aria-selected="false"><i
+                  data-feather="alert-circle"></i>info</a>
             </li>
           </ul>
         </nav>
         <nav class="sidebar__links">
           <ul class="sidebar__linklist">
-            <li class="sidebar__linkitem">
-              <a href="/settings.html"><i data-feather="sliders"></i>settings</a>
-            </li>
             <li class="sidebar__linkitem">
               <a href=""><i data-feather="log-out"></i>logout</a>
             </li>
@@ -103,84 +87,62 @@
           </ul>
         </footer>
       </aside>
-      <div class="main-section main-profile">
+      <div class="main-section">
         <div class="content-head">
-          <h1 class="content-title"><i data-feather="layout"></i>dashboard</h1>
+          <h1 class="content-title">DESKTOP-W12L003</h1>
         </div>
         <div class="content-body">
           <div class="row">
-            <div class="col-md-6">
-              <section class="custom-row">
-                <div class="head">
-                  <h3 class="title">assets overview</h3>
-                </div>
-                <div class="body"></div>
-              </section>
-              <section class="custom-row">
-                <div class="head">
-                  <h3 class="title">recently discovered/added</h3>
-                  <a href="#" class="view-all">see all</a>
-                </div>
-                <div class="body">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">type</th>
-                        <th scope="col">OS</th>
-                        <th scope="col">time added</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>router</td>
-                        <td>Cisco IOS</td>
-                        <td>a minute ago</td>
-                      </tr>
-                      <tr>
-                        <td>laptop</td>
-                        <td>windows 10</td>
-                        <td>4 hours ago</td>
-                      </tr>
-                      <tr>
-                        <td>laptop</td>
-                        <td>windows 10</td>
-                        <td>6 hours ago</td>
-                      </tr>
-                      <tr>
-                        <td>laptop</td>
-                        <td>macOS</td>
-                        <td>6 hours ago</td>
-                      </tr>
-                      <tr>
-                        <td>laptop</td>
-                        <td>HP MF3W</td>
-                        <td>yesterday</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </section>
+            <div class="col-md-4">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th scope="row">Brand</th>
+                    <td>Dell</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Model</th>
+                    <td>XPS 3000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Serial</th>
+                    <td>CZ3117EPBJM</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Processor</th>
+                    <td>1 x i7 7440</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RAM</th>
+                    <td>8 GB</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Disks</th>
+                    <td>1 x 512 GB (SAMSUNG)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">IP Address</th>
+                    <td>10.10.10.2</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">MAC Address</th>
+                    <td>5F:0D:13:CA:D8:30</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Users</th>
+                    <td>administrator<br>idoe</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="col-md-6">
-              <section class="custom-row">
-                <div class="head">
-                  <h3 class="title">total operating systems</h3>
-                </div>
-                <div class="body"></div>
-              </section>
-              <section class="custom-row">
-                <div class="head">
-                  <h3 class="title">total assets</h3>
-                </div>
-                <div class="body"></div>
-              </section>
+            <div class="col-md-4">
             </div>
+            <div class="col-md-4"></div>
           </div>
         </div>
       </div>
     </section>
   </section>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
