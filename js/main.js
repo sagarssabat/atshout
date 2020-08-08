@@ -5,4 +5,20 @@ $(document).ready(function () {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
+
+  // $('.datepicker').datepicker();
+
+  $('input[name="dates"]').daterangepicker();
+  $('#datepicker').daterangepicker({
+    "singleDatePicker": true,
+    "showDropdowns": false,
+    "locale": {
+      "format": "MM/DD/YYYY"
+    },
+    "opens": "center"
+  });
+
+  // $(function () {
+  //   $('#datetimepicker4').datetimepicker();
+  // });
 });

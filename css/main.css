@@ -1007,6 +1007,10 @@ img {
   margin-right: 10px;
   text-transform: capitalize;
 }
+.custom-filter-group #datepicker {
+  margin-left: 10px;
+  line-height: 1.4;
+}
 
 .border--highlight {
   border: 1px solid #E9922C;
@@ -1030,6 +1034,11 @@ img {
 
 .border--primary {
   border: 1px solid #5aa2f0;
+}
+
+.daterangepicker.single .ranges,
+.daterangepicker.single .drp-calendar {
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {

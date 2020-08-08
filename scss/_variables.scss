@@ -27,3 +27,18 @@ $--font-semi-bold: 'Dosis-SemiBold';
 $--font-light: 'Dosis-Light';
 $--font-regular: 'Dosis-Regular';
 $--font-extra-light: 'Dosis-ExtraLight';
+
+// 8. Date + Time Picker
+// ==========================================================================
+
+$datepicker-display-font-size: 2.8rem;
+$datepicker-calendar-header-color: #999;
+$datepicker-weekday-color: rgba(0, 0, 0, .87) !default;
+$datepicker-weekday-bg: darken($--color-primary, 7%) !default;
+$datepicker-date-bg: $--color-primary !default;
+$datepicker-year: rgba(255, 255, 255, .7) !default;
+$datepicker-focus: rgba(0, 0, 0, .05) !default;
+$datepicker-selected: $--color-primary !default;
+$datepicker-selected-outfocus: desaturate(lighten($--color-primary, 35%), 15%) !default;
+$datepicker-day-focus: transparentize(desaturate($--color-primary, 5%), .75) !default;
+$datepicker-disabled-day-color: rgba(0, 0, 0, .3) !default;
