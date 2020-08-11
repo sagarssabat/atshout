@@ -455,6 +455,20 @@ img {
   width: 100%;
 }
 
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+  background-color: $--color-primary;
+}
+
+.daterangepicker .ranges li.active {
+  background-color: $--color-primary;
+}
+
+.daterangepicker td.available:hover,
+.daterangepicker th.available:hover {
+  background-color: $--color-secondary;
+}
+
 // name chip css
 .chip {
   margin: 10px 0;

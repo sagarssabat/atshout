@@ -1240,6 +1240,20 @@ img {
   width: 100%;
 }
 
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+  background-color: #5aa2f0;
+}
+
+.daterangepicker .ranges li.active {
+  background-color: #5aa2f0;
+}
+
+.daterangepicker td.available:hover,
+.daterangepicker th.available:hover {
+  background-color: #d4e2f3;
+}
+
 .chip {
   margin: 10px 0;
 }
