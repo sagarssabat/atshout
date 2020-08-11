@@ -863,6 +863,26 @@ html,
 body {
   position: relative;
   height: 100%;
+  /* Let's get this party started */
+  /* Track */
+  /* Handle */
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 6px;
+}
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(233, 146, 44, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #E9922C;
+  -webkit-box-shadow: inset 0 0 6px rgba(233, 146, 44, 0.5);
 }
 
 body {
